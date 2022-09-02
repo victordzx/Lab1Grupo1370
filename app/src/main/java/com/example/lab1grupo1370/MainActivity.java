@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void abrirMemoria(View view) {
-        Intent intent = new Intent(this, );
+        Intent intent = new Intent(this, MainActivityMemo.class);
         startActivity(intent);
     }
 
