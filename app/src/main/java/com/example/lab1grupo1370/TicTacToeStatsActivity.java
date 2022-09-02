@@ -4,12 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class MainActivityMemoStats extends AppCompatActivity {
+public class TicTacToeStatsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_memo_stats);
-        getSupportActionBar().setTitle("Juego - Memoria");
+        setContentView(R.layout.activity_tic_tac_toe_stats);
+        getSupportActionBar().setTitle("Juego - Tres en Raya");
     }
 }

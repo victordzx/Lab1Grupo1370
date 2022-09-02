@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        getSupportActionBar().setTitle("APPSIoT - Lab 1");
     }
 
     public void abrirMemoria(View view) {
@@ -20,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void abrirTresRaya(View view) {
-        Intent intent = new Intent(this, );
+        Intent intent = new Intent(this, TicTacToeActivity.class);
         startActivity(intent);
     }
 }

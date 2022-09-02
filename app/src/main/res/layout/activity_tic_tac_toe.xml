@@ -7,7 +7,7 @@
     tools:context=".TicTacToeActivity">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn_nuevoJuegoMemStats"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:text="Button"
@@ -77,4 +77,26 @@
         android:text="Button"
         tools:layout_editor_absoluteX="286dp"
         tools:layout_editor_absoluteY="156dp" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="169dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="40dp"
+        android:onClick="abrirTicTacToeStats"
+        android:text="Estadísticas"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btn_nuevoTic"
+        app:layout_constraintStart_toStartOf="@+id/btn_nuevoTic"
+        app:layout_constraintTop_toBottomOf="@+id/btn_nuevoTic" />
+
+    <Button
+        android:id="@+id/btn_nuevoTic"
+        android:layout_width="169dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="548dp"
+        android:text="Nuevo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
