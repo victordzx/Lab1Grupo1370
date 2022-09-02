@@ -79,7 +79,7 @@
         tools:layout_editor_absoluteY="156dp" />
 
     <Button
-        android:id="@+id/button12"
+        android:id="@+id/btn_StatsTic"
         android:layout_width="169dp"
         android:layout_height="60dp"
         android:layout_marginBottom="40dp"
