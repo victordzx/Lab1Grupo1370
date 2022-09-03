@@ -4,9 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -23,17 +25,14 @@ public class TicTacToeActivity extends AppCompatActivity {
             0, 0, 0,
     };
 
-    int estado = 0; //veremos que -1 cuando gana x
+    int estado = 10; //veremos que -1 cuando gana x
                     //1 cunado gana el o
                     //0 cuando hay empate
     int fichasPuestas = 0;
     int turno = 1; //indica quien coloco la ultima ficha,para determinar el ganador
     int[] posGanadora = new int[]{-1,-1,-1}; //array de enteros, que conteiene las posiciones de la juagada ganadora
 
-
     public ArrayList<String> estadisticasTic = new ArrayList();
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +49,11 @@ public class TicTacToeActivity extends AppCompatActivity {
                 R.id.b7, R.id.b8, R.id.b9,
         };
 
+        Intent intent = getIntent();
+        int i = intent.getIntExtra("nuevoJuego",0);
+        if (i == 1) {
+            rebootGame();
+        }
 
         //Descomentar para ver un ejemplo de cómo se verian las estadisticas
 //        estadisticasTic.add("Juego 1 : Ganó X");
@@ -59,6 +63,7 @@ public class TicTacToeActivity extends AppCompatActivity {
     }
 
     public void ponerfichas(View view){
+        Button boton = (Button) view;
         if(estado == 0){ // estamos jugando
 
             int numBoton = Arrays.asList(botones).indexOf(view.getId());
@@ -67,40 +72,33 @@ public class TicTacToeActivity extends AppCompatActivity {
                 if (turno == 1) {
                     turno = -1;
                     tablero[numBoton] = -1;
-                    view.setBackgroundResource(R.drawable.x_icon);
+                    //view.setBackgroundResource(R.drawable.x_icon);
+                    boton.setText("X");
 
                     fichasPuestas += 1;
                     estado = comprobarEstado();
                     System.out.println("test1");
                     System.out.println(estado);
+                    Log.d("msg", Integer.toString(estado));
                     terminarPartida();
                     return;
-
                 }
                 if (turno == -1){
                     turno = 1;
                     tablero[numBoton] = 1;
-                    view.setBackgroundResource(R.drawable.circle_icon);
+                    //view.setBackgroundResource(R.drawable.circle_icon);
+                    boton.setText("O");
+
                     fichasPuestas += 1;
                     estado = comprobarEstado();
                     System.out.println("test2");
                     System.out.println(estado);
+                    Log.d("msg", Integer.toString(estado));
                     terminarPartida();
                     return;
-
-
-
                 }
-
-
             }
-
-
-
         }
-
-
-
     }
 
     public int comprobarEstado(){
@@ -157,35 +155,51 @@ public class TicTacToeActivity extends AppCompatActivity {
         }
 
         return nuevoEstado;
-
-
-
     }
 
     public void terminarPartida(){
         if(estado == 1 || estado == -1){
             if(estado == -1){
                 textoGanador.setVisibility(View.VISIBLE);
-                textoGanador.setText("Ha ganado x");
+                textoGanador.setText("Ganó X");
                 System.out.println("aqui van los botones llenos" + botones );
                 System.out.println("aqui van los tablero llenos" + tablero );
 
+                String estadistica = "Juego " + (estadisticasTic.size() + 1) + " : Ganó X";
+                estadisticasTic.add(estadistica);
+                estado = -10;
+
             }else{
                 textoGanador.setVisibility(View.VISIBLE);
-                textoGanador.setText("Ha ganado o");
+                textoGanador.setText("Ganó O");
 
+                String estadistica = "Juego " + (estadisticasTic.size() + 1) + " : Ganó O";
+                estadisticasTic.add(estadistica);
+                estado = -10;
             }
         }
         else if(estado == 2){
             textoGanador.setVisibility(View.VISIBLE);
-            textoGanador.setText("Es un empate!!!");
+            textoGanador.setText("Empate");
 
+            String estadistica = "Juego " + (estadisticasTic.size() + 1) + " : Empate";
+            estadisticasTic.add(estadistica);
+            estado = -10;
         }
+
     }
 
     public void reasignando(View view){
 
+        if (estado == 0) {
+            String estadistica = "Juego " + (estadisticasTic.size() + 1) + " : Canceló";
+            estadisticasTic.add(estadistica);
+        }
+        rebootGame();
 
+    }
+
+    public void rebootGame() {
         tablero = new int[]{
                 0, 0, 0,
                 0, 0, 0,
@@ -208,27 +222,26 @@ public class TicTacToeActivity extends AppCompatActivity {
         posGanadora = new int[]{-1,-1,-1}; //array de enteros, que contiene las posiciones de la juagada ganadora
 
         Button btn1 = (Button) findViewById(R.id.b1);
-        btn1.setBackgroundResource(android.R.drawable.btn_default);
+        btn1.setText("-");
         Button btn2 = (Button) findViewById(R.id.b2);
-        btn2.setBackgroundResource(android.R.drawable.btn_default);
+        btn2.setText("-");
         Button btn3 = (Button) findViewById(R.id.b3);
-        btn3.setBackgroundResource(android.R.drawable.btn_default);
+        btn3.setText("-");
         Button btn4 = (Button) findViewById(R.id.b4);
-        btn4.setBackgroundResource(android.R.drawable.btn_default);
+        btn4.setText("-");
         Button btn5 = (Button) findViewById(R.id.b5);
-        btn5.setBackgroundResource(android.R.drawable.btn_default);
+        btn5.setText("-");
         Button btn6 = (Button) findViewById(R.id.b6);
-        btn6.setBackgroundResource(android.R.drawable.btn_default);
+        btn6.setText("-");
         Button btn7 = (Button) findViewById(R.id.b7);
-        btn7.setBackgroundResource(android.R.drawable.btn_default);
+        btn7.setText("-");
         Button btn8 = (Button) findViewById(R.id.b8);
-        btn8.setBackgroundResource(android.R.drawable.btn_default);
+        btn8.setText("-");
         Button btn9 = (Button) findViewById(R.id.b9);
-        btn9.setBackgroundResource(android.R.drawable.btn_default);
+        btn9.setText("-");
         textoGanador.setVisibility(View.INVISIBLE);
 
-
-
+        estado = 0;
     }
 
     public void abrirTicTacToeStats(View view) {

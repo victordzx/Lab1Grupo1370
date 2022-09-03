@@ -35,7 +35,8 @@
             android:layout_marginEnd="7dp"
             android:layout_marginBottom="7dp"
             android:onClick="extraerLetraBoton"
-            android:text="-" />
+            android:text="-"
+            android:textSize="24sp" />
 
         <Button
             android:id="@+id/btn14"
@@ -46,7 +47,8 @@
             android:layout_marginEnd="7dp"
             android:layout_marginBottom="7dp"
             android:onClick="extraerLetraBoton"
-            android:text="-" />
+            android:text="-"
+            android:textSize="24sp" />
 
         <Button
             android:id="@+id/btn15"
@@ -57,7 +59,8 @@
             android:layout_marginEnd="7dp"
             android:layout_marginBottom="7dp"
             android:onClick="extraerLetraBoton"
-            android:text="-" />
+            android:text="-"
+            android:textSize="24sp" />
 
         <Button
             android:id="@+id/btn16"
@@ -68,7 +71,8 @@
             android:layout_marginEnd="20dp"
             android:layout_marginBottom="7dp"
             android:onClick="extraerLetraBoton"
-            android:text="-" />
+            android:text="-"
+            android:textSize="24sp" />
     </LinearLayout>
 
     <Button
@@ -100,7 +104,8 @@
             android:layout_marginEnd="7dp"
             android:layout_marginBottom="7dp"
             android:onClick="extraerLetraBoton"
-            android:text="-" />
+            android:text="-"
+            android:textSize="24sp" />
 
         <Button
             android:id="@+id/btn10"
@@ -111,7 +116,8 @@
             android:layout_marginEnd="7dp"
             android:layout_marginBottom="7dp"
             android:onClick="extraerLetraBoton"
-            android:text="-" />
+            android:text="-"
+            android:textSize="24sp" />
 
         <Button
             android:id="@+id/btn11"
@@ -122,7 +128,8 @@
             android:layout_marginEnd="7dp"
             android:layout_marginBottom="14dp"
             android:onClick="extraerLetraBoton"
-            android:text="-" />
+            android:text="-"
+            android:textSize="24sp" />
 
         <Button
             android:id="@+id/btn12"
@@ -133,7 +140,8 @@
             android:layout_marginEnd="20dp"
             android:layout_marginBottom="7dp"
             android:onClick="extraerLetraBoton"
-            android:text="-" />
+            android:text="-"
+            android:textSize="24sp" />
     </LinearLayout>
 
     <Button
@@ -165,7 +173,8 @@
             android:layout_marginEnd="7dp"
             android:layout_marginBottom="14dp"
             android:onClick="extraerLetraBoton"
-            android:text="-" />
+            android:text="-"
+            android:textSize="24sp" />
 
         <Button
             android:id="@+id/btn6"
@@ -176,7 +185,8 @@
             android:layout_marginEnd="7dp"
             android:layout_marginBottom="7dp"
             android:onClick="extraerLetraBoton"
-            android:text="-" />
+            android:text="-"
+            android:textSize="24sp" />
 
         <Button
             android:id="@+id/btn7"
@@ -187,7 +197,8 @@
             android:layout_marginEnd="7dp"
             android:layout_marginBottom="14dp"
             android:onClick="extraerLetraBoton"
-            android:text="-" />
+            android:text="-"
+            android:textSize="24sp" />
 
         <Button
             android:id="@+id/btn8"
@@ -199,6 +210,7 @@
             android:layout_marginBottom="7dp"
             android:onClick="extraerLetraBoton"
             android:text="-"
+            android:textSize="24sp"
             tools:ignore="DuplicateSpeakableTextCheck" />
     </LinearLayout>
 
@@ -231,7 +243,8 @@
             android:layout_marginEnd="7dp"
             android:layout_marginBottom="7dp"
             android:onClick="extraerLetraBoton"
-            android:text="-" />
+            android:text="-"
+            android:textSize="24sp" />
 
         <Button
             android:id="@+id/btn2"
@@ -242,7 +255,8 @@
             android:layout_marginEnd="7dp"
             android:layout_marginBottom="14dp"
             android:onClick="extraerLetraBoton"
-            android:text="-" />
+            android:text="-"
+            android:textSize="24sp" />
 
         <Button
             android:id="@+id/btn3"
@@ -253,7 +267,8 @@
             android:layout_marginEnd="7dp"
             android:layout_marginBottom="14dp"
             android:onClick="extraerLetraBoton"
-            android:text="-" />
+            android:text="-"
+            android:textSize="24sp" />
 
         <Button
             android:id="@+id/btn4"
@@ -264,6 +279,7 @@
             android:layout_marginEnd="20dp"
             android:layout_marginBottom="14dp"
             android:onClick="extraerLetraBoton"
-            android:text="-" />
+            android:text="-"
+            android:textSize="24sp" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

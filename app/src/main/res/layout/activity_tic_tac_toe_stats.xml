@@ -26,7 +26,7 @@
                 android:layout_height="wrap_content"
                 android:text="Aún no se ha jugado una partida"
                 android:textAlignment="center"
-                android:textSize="16sp" />
+                android:textSize="20sp" />
         </LinearLayout>
     </ScrollView>
 
@@ -36,6 +36,7 @@
         android:layout_height="60dp"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="36dp"
+        android:onClick="nuevoJuego"
         android:text="Nuevo Juego"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"

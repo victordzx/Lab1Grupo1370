@@ -147,8 +147,9 @@ public class MainActivityMemo extends AppCompatActivity {
                     if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
                         long seconds = instantStopped.getEpochSecond() - instantStarted.getEpochSecond();
 
-                        if (seconds < 60){
-                            String tiempo = "Termino en " + (seconds/60.0) + " minutos";
+//                        if (seconds < 60){
+                        Log.d("msg", String.valueOf(seconds));
+                            String tiempo = "Terminó en " + Math.round((seconds/60.0)*100.0)/100.0 + " minutos";
 
                             String estadistica = "Juego " + (estadisticasMemo.size() + 1) + " : " + tiempo;
                             estadisticasMemo.add(estadistica);
@@ -156,15 +157,15 @@ public class MainActivityMemo extends AppCompatActivity {
                             TextView cronometro = (TextView) findViewById(R.id.mostrarTiempo);
                             cronometro.setText(tiempo);
 
-                        }else{
-                            String tiempo = "Termino en " + (60.0/seconds) + " minutos";
-
-                            String estadistica = "Juego " + (estadisticasMemo.size() + 1) + " : " + tiempo;
-                            estadisticasMemo.add(estadistica);
-
-                            TextView cronometro = (TextView) findViewById(R.id.mostrarTiempo);
-                            cronometro.setText(tiempo);
-                        }
+//                        } else{
+//                            String tiempo = "Terminó en " +  Math.round((60.0/seconds)*100.0)/100.0 + " minutos";
+//
+//                            String estadistica = "Juego " + (estadisticasMemo.size() + 1) + " : " + tiempo;
+//                            estadisticasMemo.add(estadistica);
+//
+//                            TextView cronometro = (TextView) findViewById(R.id.mostrarTiempo);
+//                            cronometro.setText(tiempo);
+//                        }
                     }
                 }
             }

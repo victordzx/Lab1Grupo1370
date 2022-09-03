@@ -10,145 +10,181 @@
         android:id="@+id/btn_StatsTic"
         android:layout_width="169dp"
         android:layout_height="60dp"
-        android:layout_marginStart="121dp"
-        android:layout_marginBottom="42dp"
+        android:layout_marginBottom="40dp"
         android:onClick="abrirTicTacToeStats"
         android:text="Estadísticas"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="@+id/btn_nuevoTic"
+        app:layout_constraintStart_toStartOf="@+id/btn_nuevoTic"
+        app:layout_constraintTop_toBottomOf="@+id/btn_nuevoTic" />
 
     <Button
         android:id="@+id/btn_nuevoTic"
         android:layout_width="169dp"
         android:layout_height="60dp"
-        android:layout_marginStart="121dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginTop="30dp"
         android:onClick="reasignando"
         android:text="Nuevo"
-        app:layout_constraintBottom_toTopOf="@+id/btn_StatsTic"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textoGanador" />
 
     <TextView
         android:id="@+id/TextTitulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="164dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="40dp"
         android:text="Tres en raya"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="407dp"
-        android:layout_height="121dp"
-        android:layout_marginStart="3dp"
-        android:layout_marginTop="46dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
         android:orientation="horizontal"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/TextTitulo"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="@+id/TextTitulo"
         app:layout_constraintTop_toBottomOf="@+id/TextTitulo">
 
         <Button
             android:id="@+id/b1"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="3dp"
             android:layout_weight="1"
             android:onClick="ponerfichas"
-            android:text="-" />
+            android:text="-"
+            android:textSize="24sp" />
 
         <Button
             android:id="@+id/b2"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="3dp"
             android:layout_weight="1"
             android:onClick="ponerfichas"
-            android:text="-" />
+            android:text="-"
+            android:textSize="24sp" />
 
         <Button
             android:id="@+id/b3"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="20dp"
             android:layout_weight="1"
             android:onClick="ponerfichas"
-            android:text="-" />
+            android:text="-"
+            android:textSize="24sp" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout2"
-        android:layout_width="407dp"
-        android:layout_height="127dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="1dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
         <Button
             android:id="@+id/b4"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="3dp"
             android:layout_weight="1"
             android:onClick="ponerfichas"
-            android:text="-" />
+            android:text="-"
+            android:textSize="24sp" />
 
         <Button
             android:id="@+id/b5"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
             android:layout_weight="1"
             android:onClick="ponerfichas"
-            android:text="-" />
+            android:text="-"
+            android:textSize="24sp" />
 
         <Button
             android:id="@+id/b6"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="20dp"
             android:layout_weight="1"
             android:onClick="ponerfichas"
-            android:text="-" />
+            android:text="-"
+            android:textSize="24sp" />
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="409dp"
-        android:layout_height="121dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="1dp"
+        android:id="@+id/linearLayout5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout2"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout2"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
 
         <Button
             android:id="@+id/b7"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="7dp"
             android:layout_weight="1"
             android:onClick="ponerfichas"
-            android:text="-" />
+            android:text="-"
+            android:textSize="24sp" />
 
         <Button
             android:id="@+id/b8"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="7dp"
             android:layout_weight="1"
             android:onClick="ponerfichas"
-            android:text="-" />
+            android:text="-"
+            android:textSize="24sp" />
 
         <Button
             android:id="@+id/b9"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="7dp"
             android:layout_weight="1"
             android:onClick="ponerfichas"
-            android:text="-" />
+            android:text="-"
+            android:textSize="24sp" />
     </LinearLayout>
 
     <TextView
         android:id="@+id/textoGanador"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="176dp"
-        android:layout_marginBottom="18dp"
-        android:text="Mensaje"
-        app:layout_constraintBottom_toTopOf="@+id/btn_nuevoTic"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:layout_marginTop="76dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout5"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout5"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5" />
 </androidx.constraintlayout.widget.ConstraintLayout>

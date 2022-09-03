@@ -29,4 +29,10 @@ public class TicTacToeStatsActivity extends AppCompatActivity {
             textView.setText(estadisticasStr);
         }
     }
+
+    public void nuevoJuego(View view) {
+        Intent intent = new Intent(this, TicTacToeActivity.class);
+        intent.putExtra("nuevoJuego", 1);
+        startActivity(intent);
+    }
 }

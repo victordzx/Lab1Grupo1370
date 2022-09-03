@@ -3,12 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Lab1Grupo1370/app/src/main/res/layout/activity_main_memo.xml" value="0.22708333333333333" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Lab1Grupo1370/app/src/main/res/layout/activity_main_memo_stats.xml" value="0.264" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Lab1Grupo1370/app/src/main/res/layout/activity_tic_tac_toe.xml" value="0.22604166666666667" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Lab1Grupo1370/app/src/main/res/layout/activity_tic_tac_toe_stats.xml" value="0.22604166666666667" />
         <entry key="..\:/Users/Labtel/AndroidStudioProjects/Lab1Grupo1370/app/src/main/res/layout/activity_main.xml" value="0.28854166666666664" />
         <entry key="..\:/Users/Labtel/AndroidStudioProjects/Lab1Grupo1370/app/src/main/res/layout/activity_main_memo.xml" value="0.28854166666666664" />
         <entry key="..\:/Users/Labtel/AndroidStudioProjects/Lab1Grupo1370/app/src/main/res/layout/activity_main_memo_stats.xml" value="0.25" />
         <entry key="..\:/Users/Labtel/AndroidStudioProjects/Lab1Grupo1370/app/src/main/res/layout/activity_tic_tac_toe.xml" value="0.28854166666666664" />
         <entry key="..\:/Users/Labtel/AndroidStudioProjects/Lab1Grupo1370/app/src/main/res/layout/activity_tic_tac_toe_stats.xml" value="0.25" />
-        <entry key="..\:/Users/piero/AndroidStudioProjects/Lab1Grupo1370/app/src/main/res/layout/activity_main_memo.xml" value="0.18802083333333333" />
         <entry key="..\:/Users/piero/AndroidStudioProjects/Lab1Grupo1370/app/src/main/res/layout/activity_tic_tac_toe.xml" value="0.36666666666666664" />
       </map>
     </option>
