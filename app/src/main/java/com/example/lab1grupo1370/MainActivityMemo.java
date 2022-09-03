@@ -25,13 +25,19 @@ public class MainActivityMemo extends AppCompatActivity {
     private int contadorElecciones;
     private ArrayList<Button> btnElecciones = new ArrayList<>();
     private Instant instantStarted, instantStopped;
-    private ArrayList<String> listaTiempos = new ArrayList<>();
+//    private ArrayList<String> listaTiempos = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_memo);
         getSupportActionBar().setTitle("Inicio");
+
+        Intent intent = getIntent();
+        int i = intent.getIntExtra("nuevoJuego",0);
+        if (i == 1) {
+            memoInitalize();
+        }
 
         //Descomentar para ver un ejemplo de cómo se verian las estadisticas
 //        estadisticasMemo.add("Juego 1 : Terminó en 2 minutos");
@@ -144,8 +150,8 @@ public class MainActivityMemo extends AppCompatActivity {
                         if (seconds < 60){
                             String tiempo = "Termino en " + (seconds/60.0) + " minutos";
 
-                            String estadistica = "Juego " + (listaTiempos.size() + 1) + " : " + tiempo;
-                            listaTiempos.add(estadistica);
+                            String estadistica = "Juego " + (estadisticasMemo.size() + 1) + " : " + tiempo;
+                            estadisticasMemo.add(estadistica);
 
                             TextView cronometro = (TextView) findViewById(R.id.mostrarTiempo);
                             cronometro.setText(tiempo);
@@ -153,8 +159,8 @@ public class MainActivityMemo extends AppCompatActivity {
                         }else{
                             String tiempo = "Termino en " + (60.0/seconds) + " minutos";
 
-                            String estadistica = "Juego " + (listaTiempos.size() + 1) + " : " + tiempo;
-                            listaTiempos.add(estadistica);
+                            String estadistica = "Juego " + (estadisticasMemo.size() + 1) + " : " + tiempo;
+                            estadisticasMemo.add(estadistica);
 
                             TextView cronometro = (TextView) findViewById(R.id.mostrarTiempo);
                             cronometro.setText(tiempo);
@@ -168,8 +174,8 @@ public class MainActivityMemo extends AppCompatActivity {
     public void rebootJuego(View view){
 
         if(btnLetra.size() != 0){
-            String estadistica = "Juego " + (listaTiempos.size() + 1) + " : " + "Canceló";
-            listaTiempos.add(estadistica);
+            String estadistica = "Juego " + (estadisticasMemo.size() + 1) + " : " + "Canceló";
+            estadisticasMemo.add(estadistica);
         }
         memoInitalize();
     }
