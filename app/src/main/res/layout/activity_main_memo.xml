@@ -10,166 +10,187 @@
         android:id="@+id/btn8"
         android:layout_width="67dp"
         android:layout_height="56dp"
-        android:text="Button"
-        tools:layout_editor_absoluteX="301dp"
-        tools:layout_editor_absoluteY="266dp" />
+        android:layout_marginTop="253dp"
+        android:layout_marginEnd="43dp"
+        android:onClick="extraerLetraBoton"
+        android:text="-"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="DuplicateSpeakableTextCheck" />
 
     <Button
         android:id="@+id/btn11"
         android:layout_width="67dp"
         android:layout_height="56dp"
-        android:text="Button"
-        tools:layout_editor_absoluteX="216dp"
-        tools:layout_editor_absoluteY="332dp" />
+        android:layout_marginTop="309dp"
+        android:layout_marginEnd="128dp"
+        android:onClick="extraerLetraBoton"
+        android:text="-"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btn7"
         android:layout_width="67dp"
         android:layout_height="56dp"
-        android:text="Button"
-        tools:layout_editor_absoluteX="216dp"
-        tools:layout_editor_absoluteY="266dp" />
+        android:layout_marginTop="253dp"
+        android:layout_marginEnd="128dp"
+        android:onClick="extraerLetraBoton"
+        android:text="-"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btn16"
         android:layout_width="67dp"
         android:layout_height="56dp"
-        android:text="Button"
-        tools:layout_editor_absoluteX="301dp"
-        tools:layout_editor_absoluteY="401dp" />
+        android:layout_marginTop="365dp"
+        android:layout_marginEnd="43dp"
+        android:onClick="extraerLetraBoton"
+        android:text="-"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btn2"
         android:layout_width="67dp"
         android:layout_height="56dp"
-        android:text="Button"
-        tools:layout_editor_absoluteX="128dp"
-        tools:layout_editor_absoluteY="197dp" />
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="197dp"
+        android:onClick="extraerLetraBoton"
+        android:text="-"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btn14"
         android:layout_width="67dp"
         android:layout_height="56dp"
-        android:text="Button"
-        tools:layout_editor_absoluteX="128dp"
-        tools:layout_editor_absoluteY="401dp" />
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="365dp"
+        android:onClick="extraerLetraBoton"
+        android:text="-"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btn15"
         android:layout_width="67dp"
         android:layout_height="56dp"
-        android:text="Button"
-        tools:layout_editor_absoluteX="216dp"
-        tools:layout_editor_absoluteY="401dp" />
+        android:layout_marginTop="365dp"
+        android:layout_marginEnd="128dp"
+        android:onClick="extraerLetraBoton"
+        android:text="-"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btn6"
         android:layout_width="67dp"
         android:layout_height="56dp"
-        android:text="Button"
-        tools:layout_editor_absoluteX="128dp"
-        tools:layout_editor_absoluteY="266dp" />
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="253dp"
+        android:onClick="extraerLetraBoton"
+        android:text="-"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btn5"
         android:layout_width="67dp"
         android:layout_height="56dp"
-        android:text="Button"
-        tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="266dp" />
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="253dp"
+        android:onClick="extraerLetraBoton"
+        android:text="-"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btn13"
         android:layout_width="67dp"
         android:layout_height="56dp"
-        android:text="Button"
-        tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="401dp" />
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="365dp"
+        android:onClick="extraerLetraBoton"
+        android:text="-"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btn10"
         android:layout_width="67dp"
         android:layout_height="56dp"
-        android:text="Button"
-        tools:layout_editor_absoluteX="128dp"
-        tools:layout_editor_absoluteY="332dp" />
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="309dp"
+        android:onClick="extraerLetraBoton"
+        android:text="-"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btn9"
         android:layout_width="67dp"
         android:layout_height="56dp"
-        android:text="Button"
-        tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="332dp" />
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="309dp"
+        android:onClick="extraerLetraBoton"
+        android:text="-"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btn12"
         android:layout_width="67dp"
         android:layout_height="56dp"
-        android:text="Button"
-        tools:layout_editor_absoluteX="301dp"
-        tools:layout_editor_absoluteY="332dp" />
+        android:layout_marginTop="309dp"
+        android:layout_marginEnd="43dp"
+        android:onClick="extraerLetraBoton"
+        android:text="-"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btn1"
         android:layout_width="67dp"
         android:layout_height="56dp"
-        android:text="Button"
-        tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="197dp" />
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="197dp"
+        android:onClick="extraerLetraBoton"
+        android:text="-"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btn3"
         android:layout_width="67dp"
         android:layout_height="56dp"
-        android:text="Button"
-        tools:layout_editor_absoluteX="216dp"
-        tools:layout_editor_absoluteY="197dp" />
+        android:layout_marginTop="197dp"
+        android:layout_marginEnd="128dp"
+        android:onClick="extraerLetraBoton"
+        android:text="-"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btn4"
-        android:layout_width="67dp"
+        android:layout_width="0dp"
         android:layout_height="56dp"
-        android:text="Button"
-        tools:layout_editor_absoluteX="301dp"
-        tools:layout_editor_absoluteY="197dp" />
-
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar2"
-        android:layout_width="409dp"
-        android:layout_height="wrap_content"
-        android:background="?attr/colorPrimary"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp" />
-
-    <TextView
-        android:id="@+id/textInicio"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Inicio"
-        android:textAlignment="center"
-        android:textColor="#FFFFFF"
-        android:textSize="24sp"
-        tools:layout_editor_absoluteX="176dp"
-        tools:layout_editor_absoluteY="16dp" />
-
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="?attr/actionModeCloseDrawable"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="5dp" />
+        android:layout_marginTop="197dp"
+        android:onClick="extraerLetraBoton"
+        android:text="-"
+        app:layout_constraintEnd_toEndOf="@+id/btn8"
+        app:layout_constraintStart_toStartOf="@+id/btn8"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textMemoria"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
         android:text="Memoria"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="158dp"
+        app:layout_constraintStart_toStartOf="@+id/btn2"
         tools:layout_editor_absoluteY="105dp" />
 
     <Button
@@ -177,6 +198,7 @@
         android:layout_width="169dp"
         android:layout_height="60dp"
         android:layout_marginTop="548dp"
+        android:onClick="rebootJuego"
         android:text="Nuevo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -193,4 +215,15 @@
         app:layout_constraintEnd_toEndOf="@+id/btn_nuevoMem"
         app:layout_constraintStart_toStartOf="@+id/btn_nuevoMem"
         app:layout_constraintTop_toBottomOf="@+id/btn_nuevoMem" />
+
+    <TextView
+        android:id="@+id/mostrarTiempo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="51dp"
+        android:layout_marginEnd="53dp"
+        android:layout_marginBottom="35dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_nuevoMem"
+        app:layout_constraintEnd_toEndOf="@+id/btn15"
+        app:layout_constraintStart_toStartOf="@+id/btn_nuevoMem" />
 </androidx.constraintlayout.widget.ConstraintLayout>
