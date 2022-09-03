@@ -29,4 +29,11 @@ public class MainActivityMemoStats extends AppCompatActivity {
             textView.setText(estadisticasStr);
         }
     }
+
+    public void nuevoJuego(View view) {
+        Intent intent = new Intent(this, MainActivityMemo.class);
+        intent.putExtra("nuevoJuego", 1);
+        startActivity(intent);
+    }
+
 }

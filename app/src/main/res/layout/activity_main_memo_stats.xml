@@ -48,6 +48,7 @@
         android:layout_height="60dp"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="36dp"
+        android:onClick="nuevoJuego"
         android:text="Nuevo Juego"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
